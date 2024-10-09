@@ -1,0 +1,19 @@
+//Finding the biggest character in a string
+import java.util.*;
+
+class String_big_character {
+    public static void main(String[]  args) {
+        String a = "abcd";
+        char[] b = new char[5];
+        for(int i = 0;i<a.length();i++) {
+            b[i] = a.charAt(i);
+        }
+        int max = Integer.MIN_VALUE;
+        for(int j : b) {
+            if(j>max) {
+             max = j;  
+            }
+        }
+        System.out.println((char)max);
+    }
+}
